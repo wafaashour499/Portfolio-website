@@ -50,6 +50,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     /* ==========================================================================
+       Scroll Progress Bar
+       ========================================================================== */
+    const scrollProgressBar = document.getElementById('scroll-progress-bar');
+
+    function updateScrollProgressBar() {
+        if (!scrollProgressBar) return;
+        const scrollTop = window.pageYOffset;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+        scrollProgressBar.style.width = progress + '%';
+    }
+
+    window.addEventListener('scroll', updateScrollProgressBar);
+    updateScrollProgressBar();
+
+    /* ==========================================================================
        Scroll Spy for Navigation
        ========================================================================== */
     const sections = document.querySelectorAll('section');

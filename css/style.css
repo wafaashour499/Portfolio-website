@@ -1200,6 +1200,44 @@ footer {
 }
 
 /* ==========================================================================
+   Scroll Progress Bar
+   ========================================================================== */
+.scroll-progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+    z-index: 1100;
+    transition: width 0.1s linear;
+}
+
+/* ==========================================================================
+   Reduced Motion Support
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .reveal {
+        opacity: 1;
+        transform: none;
+    }
+
+    .scroll-progress-bar {
+        transition: none;
+    }
+}
+
+/* ==========================================================================
    Back to Top Button
    ========================================================================== */
 .back-to-top {
