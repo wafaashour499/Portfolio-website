@@ -435,16 +435,17 @@
 
                     <div class="project-card glass-card reveal delay-2">
                         <div class="card-icon"><i class="fas fa-film"></i></div>
-                        <h3>Global Film Industry Analysis</h3>
-                        <p>Comprehensive exploratory data analysis of worldwide movie production using Python, revealing
-                            profitability trends.</p>
+                        <h3>Movie Industry EDA with Python</h3>
+                        <p>Exploratory analysis of 6,000+ films, uncovering the real drivers of profitability in
+                            Hollywood through Python.</p>
                         <div class="card-tags"><span class="tag">Python</span><span class="tag">Pandas</span><span
                                 class="tag">EDA</span></div>
                         <div class="project-links mt-1">
                             <a href="#" target="_blank" class="btn-primary-outline btn-sm"><i class="fab fa-github"></i>
                                 GitHub</a>
-                            <a href="#" target="_blank" class="btn-primary-outline btn-sm"><i
-                                    class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <button type="button" class="btn-secondary btn-sm"
+                                data-open-modal="case-study-modal-movies-eda"><i class="fas fa-book-open"></i>
+                                Case Study</button>
                         </div>
                     </div>
 
@@ -1044,6 +1045,142 @@
         </div>
     </div>
 
+    <!-- Case Study Modal: Movie Industry EDA with Python -->
+    <div id="case-study-modal-movies-eda" class="cs-modal" aria-hidden="true">
+        <div class="cs-modal-overlay" data-close-modal></div>
+        <div class="cs-modal-panel glass-card" role="dialog" aria-modal="true"
+            aria-labelledby="cs-modal-title-movies-eda">
+            <button type="button" class="cs-modal-close" data-close-modal aria-label="Close case study">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <div class="cs-modal-scroll">
+                <div class="cs-hero">
+                    <img src="assets/case-study/movies-eda-hero.jpg" alt="Movie Industry EDA with Python"
+                        loading="lazy">
+                    <div class="cs-hero-overlay">
+                        <span class="cs-hero-badge">Case Study</span>
+                        <h2 id="cs-modal-title-movies-eda">Movie Industry EDA with Python</h2>
+                        <p>Exploring Hollywood's profitability secrets across 6,000+ films</p>
+                    </div>
+                </div>
+
+                <div class="cs-body">
+                    <section class="cs-section">
+                        <h3><i class="fas fa-info-circle"></i> Overview</h3>
+                        <p>
+                            This project turns a large, messy dataset of over 6,000 films into an interactive report
+                            that reveals what really drives profitability in Hollywood, combining data cleaning,
+                            feature engineering, and statistical analysis to surface insights hidden in the raw
+                            numbers.
+                        </p>
+                    </section>
+
+                    <section class="cs-section">
+                        <h3><i class="fas fa-user-check"></i> My Contributions</h3>
+                        <ul class="cs-list">
+                            <li>Data Cleaning: handled missing values, standardized date formats, and resolved
+                                duplicates to ensure data quality.</li>
+                            <li>Feature Engineering: created new metrics such as net profit, ROI, and release season
+                                for deeper analysis.</li>
+                            <li>Correlation Analysis: used correlation heatmaps to uncover the real drivers of
+                                revenue.</li>
+                            <li>Outlier Analysis: explained low-budget hits and streaming-platform underperformers
+                                (e.g. Netflix titles) with data.</li>
+                            <li>Visualization: turned raw numbers into professional charts that support clear
+                                decision-making.</li>
+                        </ul>
+                    </section>
+
+                    <section class="cs-section">
+                        <h3><i class="fas fa-star"></i> Key Features</h3>
+                        <div class="cs-features-grid">
+                            <div class="cs-feature"><i class="fas fa-broom"></i>
+                                <div>
+                                    <h4>Data Cleaning</h4>
+                                    <p>Missing values, inconsistent dates, and duplicates resolved for reliable
+                                        analysis.</p>
+                                </div>
+                            </div>
+                            <div class="cs-feature"><i class="fas fa-cogs"></i>
+                                <div>
+                                    <h4>Feature Engineering</h4>
+                                    <p>New metrics like profit, ROI, and release season built for deeper insight.</p>
+                                </div>
+                            </div>
+                            <div class="cs-feature"><i class="fas fa-th"></i>
+                                <div>
+                                    <h4>Correlation Heatmaps</h4>
+                                    <p>Statistical analysis highlighting the real drivers behind box office revenue.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="cs-feature"><i class="fas fa-search"></i>
+                                <div>
+                                    <h4>Outlier Analysis</h4>
+                                    <p>Data-driven explanations for surprise hits and unexpected flops.</p>
+                                </div>
+                            </div>
+                            <div class="cs-feature"><i class="fas fa-chart-bar"></i>
+                                <div>
+                                    <h4>Professional Visualizations</h4>
+                                    <p>Raw numbers turned into clear charts that support decision-making.</p>
+                                </div>
+                            </div>
+                            <div class="cs-feature"><i class="fas fa-database"></i>
+                                <div>
+                                    <h4>6,000+ Films Analyzed</h4>
+                                    <p>A large real-world dataset spanning decades of movie releases.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="cs-section">
+                        <h3><i class="fas fa-tools"></i> Tech Stack</h3>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>Seaborn</span>
+                            <span>Matplotlib</span>
+                            <span>Jupyter Notebook</span>
+                        </div>
+                    </section>
+
+                    <section class="cs-section">
+                        <h3><i class="fas fa-desktop"></i> Screenshots</h3>
+                        <div class="cs-screenshots">
+                            <figure>
+                                <img src="assets/case-study/movies-eda-correlation.jpg"
+                                    alt="Correlation heatmap analysis" loading="lazy">
+                                <figcaption>Correlation Analysis</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/case-study/movies-eda-insights.jpg"
+                                    alt="Top profit, ROI, and losers tables" loading="lazy">
+                                <figcaption>Profitability Insights</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/case-study/movies-eda-dashboard.jpg"
+                                    alt="Key metrics and insights dashboard" loading="lazy">
+                                <figcaption>Key Metrics & Insights</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/case-study/movies-eda-charts.jpg"
+                                    alt="Genre, gross, and rating charts" loading="lazy">
+                                <figcaption>Genre & Ratings Breakdown</figcaption>
+                            </figure>
+                        </div>
+                    </section>
+
+                    <div class="cs-footer-links">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="btn-primary-outline btn-sm"><i
+                                class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Custom JS -->
     <script src="js/translations.js"></script>
