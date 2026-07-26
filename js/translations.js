@@ -14,6 +14,7 @@ const translations = {
     "I build practical data-driven solutions that transform raw data into meaningful insights and intelligent applications. My expertise spans Data Analysis, Business Intelligence, AI-powered systems, Retrieval-Augmented Generation (RAG), and Workflow Automation.": "أقوم ببناء حلول عملية تعتمد على البيانات لتحويل البيانات الخام إلى رؤى ذات مغزى وتطبيقات ذكية. تمتد خبرتي لتشمل تحليل البيانات، ذكاء الأعمال، الأنظمة المدعومة بالذكاء الاصطناعي، التوليد المعزز بالاسترجاع (RAG)، وأتمتة سير العمل.",
     "View My Work": "شاهد أعمالي",
     "Let's Connect": "لنتواصل",
+    "Available for Work": "متاح للعمل",
 
     // About
     "Introduction": "مقدمة",
