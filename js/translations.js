@@ -120,6 +120,7 @@ const translations = {
     "Performance Over Time": "الأداء عبر الزمن",
     "Compares sales performance across different time periods.": "يقارن أداء المبيعات عبر فترات زمنية مختلفة.",
     "Full Dashboard Detail": "تفصيل كامل للوحة التحكم",
+    "Country & Amount Filter Page": "صفحة فلترة حسب الدولة والمبلغ",
     "Movie Industry EDA with Python": "تحليل واستكشاف بيانات صناعة السينما العالمية باستخدام Python",
     "Exploratory analysis of 6,000+ films, uncovering the real drivers of profitability in Hollywood through Python.": "تحليل استكشافي لأكثر من 6000 فيلم، يكشف المحركات الحقيقية للربحية في هوليوود باستخدام Python.",
     "Exploring Hollywood's profitability secrets across 6,000+ films": "استكشاف أسرار الربحية في هوليوود عبر أكثر من 6000 فيلم",
