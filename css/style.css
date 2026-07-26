@@ -286,6 +286,23 @@ p {
     box-shadow: var(--shadow-glow);
 }
 
+/* Freelance Platform Links */
+.freelance-label {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.freelance-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
 /* Tags & Badges */
 .tag {
     display: inline-block;
@@ -1217,6 +1234,271 @@ footer {
 .back-to-top:hover {
     box-shadow: var(--shadow-glow);
     transform: translateY(-4px);
+}
+
+/* ==========================================================================
+   Case Study Modal
+   ========================================================================== */
+.cs-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.35s ease, visibility 0.35s ease;
+}
+
+.cs-modal.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.cs-modal-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(9, 9, 11, 0.7);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+.cs-modal-panel {
+    position: relative;
+    background: var(--surface);
+    width: 100%;
+    max-width: 880px;
+    max-height: 88vh;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transform: translateY(30px) scale(0.97);
+    opacity: 0;
+    transition: transform 0.35s cubic-bezier(0.5, 0, 0, 1), opacity 0.35s ease;
+    box-shadow: var(--shadow-lg, 0 25px 50px -12px rgba(0, 0, 0, 0.4));
+}
+
+.cs-modal.open .cs-modal-panel {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+}
+
+.cs-modal-scroll {
+    max-height: 88vh;
+    overflow-y: auto;
+}
+
+.cs-modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 5;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.35);
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+}
+
+.cs-modal-close:hover {
+    background: rgba(0, 0, 0, 0.55);
+    transform: rotate(90deg);
+}
+
+.cs-hero {
+    position: relative;
+    width: 100%;
+    height: 260px;
+}
+
+.cs-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.cs-hero-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.5rem 2rem;
+    background: linear-gradient(180deg, rgba(9, 9, 11, 0) 0%, rgba(9, 9, 11, 0.85) 100%);
+    color: #fff;
+}
+
+.cs-hero-badge {
+    display: inline-block;
+    align-self: flex-start;
+    padding: 0.3rem 0.9rem;
+    border-radius: var(--radius-full);
+    background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.75rem;
+}
+
+.cs-hero-overlay h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.25rem;
+    color: #fff;
+}
+
+.cs-hero-overlay p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.95rem;
+}
+
+.cs-body {
+    padding: 2rem;
+    color: var(--text-primary);
+}
+
+.cs-section {
+    margin-bottom: 2rem;
+}
+
+.cs-section:last-of-type {
+    margin-bottom: 1.5rem;
+}
+
+.cs-section h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 1.15rem;
+    margin-bottom: 0.9rem;
+    color: var(--text-primary);
+}
+
+.cs-section h3 i {
+    color: var(--accent-1);
+}
+
+.cs-section p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.cs-list {
+    list-style: none;
+    display: grid;
+    gap: 0.6rem;
+}
+
+.cs-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: var(--text-secondary);
+}
+
+.cs-list li::before {
+    content: '\f00c';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    color: var(--accent-2);
+    font-size: 0.8rem;
+}
+
+.cs-features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+}
+
+.cs-feature {
+    display: flex;
+    gap: 0.9rem;
+    align-items: flex-start;
+    padding: 1rem;
+    background: var(--surface-glass);
+    border: 1px solid var(--surface-glass-border);
+    border-radius: var(--radius-md);
+}
+
+.cs-feature i {
+    font-size: 1.2rem;
+    color: var(--accent-1);
+    margin-top: 0.2rem;
+    flex-shrink: 0;
+}
+
+.cs-feature h4 {
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+    color: var(--text-primary);
+}
+
+.cs-feature p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.cs-screenshots {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+}
+
+.cs-screenshots figure {
+    margin: 0;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    border: 1px solid var(--surface-glass-border);
+}
+
+.cs-screenshots img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.cs-screenshots figcaption {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    background: var(--surface-glass);
+    text-align: center;
+}
+
+.cs-footer-links {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--surface-glass-border);
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+@media (max-width: 600px) {
+    .cs-hero {
+        height: 180px;
+    }
+
+    .cs-hero-overlay h2 {
+        font-size: 1.4rem;
+    }
+
+    .cs-body {
+        padding: 1.25rem;
+    }
 }
 
 .delay-1 {

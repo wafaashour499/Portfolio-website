@@ -112,6 +112,51 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, 100);
     /* ==========================================================================
+       Case Study Modal
+       ========================================================================== */
+    const modalOpenTriggers = document.querySelectorAll('[data-open-modal]');
+    const modalCloseTriggers = document.querySelectorAll('[data-close-modal]');
+    let lastFocusedElement = null;
+
+    function openModal(modalId) {
+        const modal = document.getElementById(modalId);
+        if (!modal) return;
+        lastFocusedElement = document.activeElement;
+        modal.classList.add('open');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('modal-open');
+    }
+
+    function closeModal(modal) {
+        modal.classList.remove('open');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('modal-open');
+        if (lastFocusedElement) {
+            lastFocusedElement.focus();
+        }
+    }
+
+    modalOpenTriggers.forEach(trigger => {
+        trigger.addEventListener('click', (e) => {
+            e.preventDefault();
+            openModal(trigger.getAttribute('data-open-modal'));
+        });
+    });
+
+    modalCloseTriggers.forEach(trigger => {
+        trigger.addEventListener('click', () => {
+            const modal = trigger.closest('.cs-modal');
+            if (modal) closeModal(modal);
+        });
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            document.querySelectorAll('.cs-modal.open').forEach(modal => closeModal(modal));
+        }
+    });
+
+    /* ==========================================================================
        Back to Top Button
        ========================================================================== */
     const backToTopBtn = document.getElementById('back-to-top');

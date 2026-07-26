@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://alwafaashour.netlify.app/">
     <title>Alwafa Ashour | Data Analyst & AI Automation Engineer</title>
     <meta name="description"
         content="Portfolio of Alwafa Ashour, a Data Analyst and AI & Automation Engineer specializing in Business Intelligence, RAG Systems, and Workflow Automation.">
@@ -22,6 +23,35 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192x192.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Alwafa Ashour",
+        "jobTitle": "Data Analyst | AI & Automation Engineer",
+        "description": "Data Analyst and AI & Automation Engineer specializing in Business Intelligence, RAG Systems, and Workflow Automation.",
+        "url": "https://alwafaashour.netlify.app/",
+        "image": "https://alwafaashour.netlify.app/assets/profile.jpg",
+        "sameAs": [
+            "https://www.linkedin.com/in/wafa-ashour/",
+            "https://github.com/wafaashour499",
+            "https://mostaql.com/u/alwafa_ashour",
+            "https://nafezly.com/u/Alwafa_Ashour",
+            "https://khamsat.com/user/wafa_ashour"
+        ],
+        "knowsAbout": [
+            "Data Analysis",
+            "Business Intelligence",
+            "Power BI",
+            "Machine Learning",
+            "Deep Learning",
+            "Retrieval-Augmented Generation (RAG)",
+            "Workflow Automation"
+        ]
+    }
+    </script>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -359,6 +389,8 @@
                                 class="btn-primary-outline btn-sm"><i class="fab fa-github"></i> GitHub</a>
                             <a href="https://egyptian-artifacts-assistant.streamlit.app/" target="_blank"
                                 class="btn-primary btn-sm"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <button type="button" class="btn-secondary btn-sm" data-open-modal="case-study-modal"><i
+                                    class="fas fa-book-open"></i> Case Study</button>
                         </div>
                     </div>
                 </div>
@@ -610,6 +642,21 @@
                                 </a>
                             </div>
 
+                            <div class="freelance-section mt-3 text-center">
+                                <p class="freelance-label">Hire Me On</p>
+                                <div class="freelance-links">
+                                    <a href="https://mostaql.com/u/alwafa_ashour" target="_blank"
+                                        rel="noopener noreferrer" class="btn-secondary btn-sm"><i
+                                            class="fas fa-briefcase"></i> Mostaql</a>
+                                    <a href="https://nafezly.com/u/Alwafa_Ashour" target="_blank"
+                                        rel="noopener noreferrer" class="btn-secondary btn-sm"><i
+                                            class="fas fa-briefcase"></i> Nafezly</a>
+                                    <a href="https://khamsat.com/user/wafa_ashour" target="_blank"
+                                        rel="noopener noreferrer" class="btn-secondary btn-sm"><i
+                                            class="fas fa-briefcase"></i> Khamsat</a>
+                                </div>
+                            </div>
+
                             <div class="mt-3 text-center cv-buttons">
                                 <a href="assets/Alwafa_Ashour_CV.pdf" target="_blank" rel="noopener noreferrer"
                                     class="btn-primary"><i class="fas fa-file-pdf"></i> Download CV</a>
@@ -635,6 +682,127 @@
             </div>
         </div>
     </footer>
+
+    <!-- Case Study Modal: Egyptian Museum AI Guide -->
+    <div id="case-study-modal" class="cs-modal" aria-hidden="true">
+        <div class="cs-modal-overlay" data-close-modal></div>
+        <div class="cs-modal-panel glass-card" role="dialog" aria-modal="true" aria-labelledby="cs-modal-title">
+            <button type="button" class="cs-modal-close" data-close-modal aria-label="Close case study">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <div class="cs-modal-scroll">
+                <div class="cs-hero">
+                    <img src="assets/case-study/hero-banner.jpg" alt="Egyptian Museum AI Guide">
+                    <div class="cs-hero-overlay">
+                        <span class="cs-hero-badge">Case Study</span>
+                        <h2 id="cs-modal-title">Egyptian Museum AI Guide</h2>
+                        <p>A bilingual RAG assistant for exploring ancient Egyptian artifacts</p>
+                    </div>
+                </div>
+
+                <div class="cs-body">
+                    <section class="cs-section">
+                        <h3><i class="fas fa-info-circle"></i> Overview</h3>
+                        <p>
+                            Visitors can ask about any artifact, king, or museum in Arabic or English, and the
+                            system searches a real artifacts database covering the Egyptian Museum in Cairo, the
+                            Luxor Museum, the Nubian Museum, and the Grand Egyptian Museum. It retrieves the most
+                            relevant pieces through semantic search, then generates a complete answer grounded in
+                            that retrieved data combined with the model's historical knowledge.
+                        </p>
+                    </section>
+
+                    <section class="cs-section">
+                        <h3><i class="fas fa-user-check"></i> My Contributions</h3>
+                        <ul class="cs-list">
+                            <li>Data Collection & Embedding Pipeline</li>
+                            <li>Vector Database Construction (ChromaDB)</li>
+                            <li>Semantic Search & Prompt Engineering</li>
+                            <li>Streamlit Interface & Deployment</li>
+                        </ul>
+                    </section>
+
+                    <section class="cs-section">
+                        <h3><i class="fas fa-star"></i> Key Features</h3>
+                        <div class="cs-features-grid">
+                            <div class="cs-feature"><i class="fas fa-language"></i>
+                                <div>
+                                    <h4>Multilingual Semantic Search</h4>
+                                    <p>Ask in Arabic or English and get the same accurate results.</p>
+                                </div>
+                            </div>
+                            <div class="cs-feature"><i class="fas fa-water"></i>
+                                <div>
+                                    <h4>Streaming Responses</h4>
+                                    <p>Answers appear progressively instead of a blocking wait.</p>
+                                </div>
+                            </div>
+                            <div class="cs-feature"><i class="fas fa-link"></i>
+                                <div>
+                                    <h4>Cited Sources</h4>
+                                    <p>Every answer links directly to the matching Wikidata entry.</p>
+                                </div>
+                            </div>
+                            <div class="cs-feature"><i class="fas fa-video"></i>
+                                <div>
+                                    <h4>Virtual Tours</h4>
+                                    <p>Automatic Matterport 3D tour links when a site has one available.</p>
+                                </div>
+                            </div>
+                            <div class="cs-feature"><i class="fas fa-image"></i>
+                                <div>
+                                    <h4>Image Fallback</h4>
+                                    <p>Broken image links gracefully fall back to a placeholder.</p>
+                                </div>
+                            </div>
+                            <div class="cs-feature"><i class="fas fa-thumbs-up"></i>
+                                <div>
+                                    <h4>User Feedback</h4>
+                                    <p>Thumbs up/down on every response for continuous improvement.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="cs-section">
+                        <h3><i class="fas fa-tools"></i> Tech Stack</h3>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Streamlit</span>
+                            <span>Llama 3.3 70B (Groq API)</span>
+                            <span>Sentence Transformers</span>
+                            <span>ChromaDB</span>
+                            <span>Wikidata</span>
+                        </div>
+                    </section>
+
+                    <section class="cs-section">
+                        <h3><i class="fas fa-desktop"></i> Screenshots</h3>
+                        <div class="cs-screenshots">
+                            <figure>
+                                <img src="assets/case-study/screenshot-home.jpg" alt="Home screen">
+                                <figcaption>Home Screen</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/case-study/screenshot-chat.jpg" alt="Conversation example">
+                                <figcaption>Conversation Example</figcaption>
+                            </figure>
+                        </div>
+                    </section>
+
+                    <div class="cs-footer-links">
+                        <a href="https://github.com/wafaashour499/Egyptian-Artifacts-Assistant" target="_blank"
+                            rel="noopener noreferrer" class="btn-primary-outline btn-sm"><i
+                                class="fab fa-github"></i> GitHub</a>
+                        <a href="https://egyptian-artifacts-assistant.streamlit.app/" target="_blank"
+                            rel="noopener noreferrer" class="btn-primary btn-sm"><i
+                                class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Back to Top Button -->
     <button id="back-to-top" class="back-to-top" aria-label="Back to top" title="Back to top">
