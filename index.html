@@ -402,17 +402,34 @@
                 <h3 class="subsection-title reveal">Other Projects</h3>
                 <div class="projects-grid">
                     <div class="project-card glass-card reveal delay-1">
-                        <div class="card-icon"><i class="fas fa-chart-line"></i></div>
-                        <h3>Sales & HR Dashboard</h3>
-                        <p>Interactive Power BI dashboards analyzing sales performance, employee KPIs, and overall
-                            business metrics.</p>
-                        <div class="card-tags"><span class="tag">Power BI</span><span class="tag">Data Analysis</span>
-                        </div>
+                        <div class="card-icon"><i class="fas fa-poll"></i></div>
+                        <h3>Data Professionals Survey Analysis</h3>
+                        <p>Interactive Power BI dashboard analyzing a survey of data-field professionals, covering
+                            salaries, tools, and career entry challenges.</p>
+                        <div class="card-tags"><span class="tag">Power BI</span><span class="tag">Excel</span><span
+                                class="tag">Data Analysis</span></div>
                         <div class="project-links mt-1">
                             <a href="#" target="_blank" class="btn-primary-outline btn-sm"><i class="fab fa-github"></i>
                                 GitHub</a>
-                            <a href="#" target="_blank" class="btn-primary-outline btn-sm"><i
-                                    class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <button type="button" class="btn-secondary btn-sm"
+                                data-open-modal="case-study-modal-powerbi-survey"><i class="fas fa-book-open"></i>
+                                Case Study</button>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass-card reveal delay-1">
+                        <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3>Sales Performance Dashboard</h3>
+                        <p>Interactive Power BI dashboard turning raw sales data into performance insights across
+                            products, sectors, and regions.</p>
+                        <div class="card-tags"><span class="tag">Power BI</span><span class="tag">Excel</span><span
+                                class="tag">Data Analysis</span></div>
+                        <div class="project-links mt-1">
+                            <a href="#" target="_blank" class="btn-primary-outline btn-sm"><i class="fab fa-github"></i>
+                                GitHub</a>
+                            <button type="button" class="btn-secondary btn-sm"
+                                data-open-modal="case-study-modal-powerbi-sales"><i class="fas fa-book-open"></i>
+                                Case Study</button>
                         </div>
                     </div>
 
@@ -811,6 +828,222 @@
     <button id="back-to-top" class="back-to-top" aria-label="Back to top" title="Back to top">
         <i class="fas fa-arrow-up"></i>
     </button>
+
+    <!-- Case Study Modal: Data Professionals Survey Analysis -->
+    <div id="case-study-modal-powerbi-survey" class="cs-modal" aria-hidden="true">
+        <div class="cs-modal-overlay" data-close-modal></div>
+        <div class="cs-modal-panel glass-card" role="dialog" aria-modal="true"
+            aria-labelledby="cs-modal-title-powerbi-survey">
+            <button type="button" class="cs-modal-close" data-close-modal aria-label="Close case study">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <div class="cs-modal-scroll">
+                <div class="cs-hero">
+                    <img src="assets/case-study/powerbi-survey-hero.png" alt="Data Professionals Survey Analysis"
+                        loading="lazy">
+                    <div class="cs-hero-overlay">
+                        <span class="cs-hero-badge">Case Study</span>
+                        <h2 id="cs-modal-title-powerbi-survey">Data Professionals Survey Analysis</h2>
+                        <p>Turning survey data into a clear picture of the data-careers job market</p>
+                    </div>
+                </div>
+
+                <div class="cs-body">
+                    <section class="cs-section">
+                        <h3><i class="fas fa-info-circle"></i> Overview</h3>
+                        <p>
+                            This project analyzes survey data collected from professionals and enthusiasts in the
+                            data field, transforming the results into an interactive dashboard that helps understand
+                            data-market trends and surfaces clear insights on salaries, in-demand skills, and the
+                            challenges of entering the field.
+                        </p>
+                    </section>
+
+                    <section class="cs-section">
+                        <h3><i class="fas fa-user-check"></i> My Contributions</h3>
+                        <ul class="cs-list">
+                            <li>Data Cleaning & Preparation</li>
+                            <li>Data Modeling & Relationships</li>
+                            <li>Key Metrics Analysis</li>
+                            <li>Interactive Dashboard Design</li>
+                            <li>Insight Extraction</li>
+                        </ul>
+                    </section>
+
+                    <section class="cs-section">
+                        <h3><i class="fas fa-star"></i> Key Features</h3>
+                        <div class="cs-features-grid">
+                            <div class="cs-feature"><i class="fas fa-globe"></i>
+                                <div>
+                                    <h4>Respondents by Country</h4>
+                                    <p>Breaks down survey participants by their country of origin.</p>
+                                </div>
+                            </div>
+                            <div class="cs-feature"><i class="fas fa-money-bill-wave"></i>
+                                <div>
+                                    <h4>Average Salary by Role</h4>
+                                    <p>Compares average salaries across data-field job titles.</p>
+                                </div>
+                            </div>
+                            <div class="cs-feature"><i class="fas fa-code"></i>
+                                <div>
+                                    <h4>Most Preferred Languages</h4>
+                                    <p>Ranks the most-used and preferred programming languages.</p>
+                                </div>
+                            </div>
+                            <div class="cs-feature"><i class="fas fa-signal"></i>
+                                <div>
+                                    <h4>Entry Difficulty</h4>
+                                    <p>Shows how difficult respondents found breaking into the field.</p>
+                                </div>
+                            </div>
+                            <div class="cs-feature"><i class="fas fa-smile"></i>
+                                <div>
+                                    <h4>Satisfaction Gauges</h4>
+                                    <p>Tracks satisfaction with salary and work-life balance.</p>
+                                </div>
+                            </div>
+                            <div class="cs-feature"><i class="fas fa-users"></i>
+                                <div>
+                                    <h4>Participant Demographics</h4>
+                                    <p>Summarizes total respondents and their average age.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="cs-section">
+                        <h3><i class="fas fa-tools"></i> Tech Stack</h3>
+                        <div class="project-tech">
+                            <span>Microsoft Excel</span>
+                            <span>Power BI</span>
+                        </div>
+                    </section>
+
+                    <section class="cs-section">
+                        <h3><i class="fas fa-desktop"></i> Screenshots</h3>
+                        <div class="cs-screenshots">
+                            <figure>
+                                <img src="assets/case-study/powerbi-survey-breakdown.png"
+                                    alt="Full survey breakdown dashboard" loading="lazy">
+                                <figcaption>Full Dashboard Breakdown</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/case-study/powerbi-survey-detail.png"
+                                    alt="Salary and entry difficulty detail" loading="lazy">
+                                <figcaption>Salary & Difficulty Detail</figcaption>
+                            </figure>
+                        </div>
+                    </section>
+
+                    <div class="cs-footer-links">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="btn-primary-outline btn-sm"><i
+                                class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Case Study Modal: Sales Performance Dashboard -->
+    <div id="case-study-modal-powerbi-sales" class="cs-modal" aria-hidden="true">
+        <div class="cs-modal-overlay" data-close-modal></div>
+        <div class="cs-modal-panel glass-card" role="dialog" aria-modal="true"
+            aria-labelledby="cs-modal-title-powerbi-sales">
+            <button type="button" class="cs-modal-close" data-close-modal aria-label="Close case study">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <div class="cs-modal-scroll">
+                <div class="cs-hero">
+                    <img src="assets/case-study/powerbi-sales-hero.png" alt="Sales Performance Dashboard"
+                        loading="lazy">
+                    <div class="cs-hero-overlay">
+                        <span class="cs-hero-badge">Case Study</span>
+                        <h2 id="cs-modal-title-powerbi-sales">Sales Performance Dashboard</h2>
+                        <p>A professional Power BI dashboard for analyzing sales data with Excel & Power BI</p>
+                    </div>
+                </div>
+
+                <div class="cs-body">
+                    <section class="cs-section">
+                        <h3><i class="fas fa-info-circle"></i> Overview</h3>
+                        <p>
+                            This project transforms raw sales data into an interactive dashboard that helps
+                            understand performance and supports accurate, data-driven decision-making across
+                            products, sectors, and regions.
+                        </p>
+                    </section>
+
+                    <section class="cs-section">
+                        <h3><i class="fas fa-user-check"></i> My Contributions</h3>
+                        <ul class="cs-list">
+                            <li>Data Cleaning & Preparation</li>
+                            <li>Data Modeling</li>
+                            <li>Key Performance Indicators (KPIs)</li>
+                            <li>Interactive Dashboard Design</li>
+                        </ul>
+                    </section>
+
+                    <section class="cs-section">
+                        <h3><i class="fas fa-star"></i> Key Features</h3>
+                        <div class="cs-features-grid">
+                            <div class="cs-feature"><i class="fas fa-dollar-sign"></i>
+                                <div>
+                                    <h4>Total Sales & Profit</h4>
+                                    <p>Summarizes total sales amount and overall profitability.</p>
+                                </div>
+                            </div>
+                            <div class="cs-feature"><i class="fas fa-box-open"></i>
+                                <div>
+                                    <h4>Performance by Product</h4>
+                                    <p>Breaks down sales performance across individual products.</p>
+                                </div>
+                            </div>
+                            <div class="cs-feature"><i class="fas fa-layer-group"></i>
+                                <div>
+                                    <h4>Sales by Sector</h4>
+                                    <p>Distributes sales across business sectors and categories.</p>
+                                </div>
+                            </div>
+                            <div class="cs-feature"><i class="fas fa-chart-line"></i>
+                                <div>
+                                    <h4>Performance Over Time</h4>
+                                    <p>Compares sales performance across different time periods.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="cs-section">
+                        <h3><i class="fas fa-tools"></i> Tech Stack</h3>
+                        <div class="project-tech">
+                            <span>Microsoft Excel</span>
+                            <span>Power BI</span>
+                        </div>
+                    </section>
+
+                    <section class="cs-section">
+                        <h3><i class="fas fa-desktop"></i> Screenshots</h3>
+                        <div class="cs-screenshots">
+                            <figure>
+                                <img src="assets/case-study/powerbi-sales-detail.png"
+                                    alt="Sales dashboard full detail" loading="lazy">
+                                <figcaption>Full Dashboard Detail</figcaption>
+                            </figure>
+                        </div>
+                    </section>
+
+                    <div class="cs-footer-links">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="btn-primary-outline btn-sm"><i
+                                class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Custom JS -->
     <script src="js/translations.js"></script>
