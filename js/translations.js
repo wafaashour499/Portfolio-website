@@ -9,7 +9,7 @@ const translations = {
 
     // Hero
     "Hi, I'm": "مرحباً، أنا",
-    "Alwafa Ashour": "الوفاء عاشور",
+    "Alwafa Ashour": "الوفا عاشور",
     "Data Analyst | AI & Automation Engineer": "محلل بيانات | مهندس ذكاء اصطناعي وأتمتة",
     "I build practical data-driven solutions that transform raw data into meaningful insights and intelligent applications. My expertise spans Data Analysis, Business Intelligence, AI-powered systems, Retrieval-Augmented Generation (RAG), and Workflow Automation.": "أقوم ببناء حلول عملية تعتمد على البيانات لتحويل البيانات الخام إلى رؤى ذات مغزى وتطبيقات ذكية. تمتد خبرتي لتشمل تحليل البيانات، ذكاء الأعمال، الأنظمة المدعومة بالذكاء الاصطناعي، التوليد المعزز بالاسترجاع (RAG)، وأتمتة سير العمل.",
     "View My Work": "شاهد أعمالي",
@@ -231,7 +231,7 @@ const translations = {
     "Download CV": "تحميل السيرة الذاتية",
 
     // Footer
-    "© 2026 Alwafa Ashour. All Rights Reserved.": "© 2026 الوفاء عاشور. جميع الحقوق محفوظة.",
+    "© 2026 Alwafa Ashour. All Rights Reserved.": "© 2026 الوفا عاشور. جميع الحقوق محفوظة.",
 
     // Default Tags (these are single words but some might need translation)
     // Actually, tags like "Power BI", "SQL" don't need translation, but we can translate some if needed.
@@ -273,7 +273,7 @@ function toggleLanguage() {
 
     // Update document title
     if (currentLang === 'ar') {
-        document.title = "الوفاء عاشور | محلل بيانات ومهندس ذكاء اصطناعي وأتمتة";
+        document.title = "الوفا عاشور | محلل بيانات ومهندس ذكاء اصطناعي وأتمتة";
     } else {
         document.title = "Alwafa Ashour | Data Analyst & AI Automation Engineer";
     }
