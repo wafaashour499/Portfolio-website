@@ -65,13 +65,29 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .custom-toggle {
+            background: none;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            color: var(--text-primary);
+            margin-left: 0.5rem;
+            font-family: inherit;
+        }
+
+        #lang-toggle.custom-toggle {
+            font-weight: 600;
+        }
+    </style>
 </head>
 
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-content container">
-            <a href="#" class="logo">A.A<span>.</span></a>
+            <a href="#hero" class="logo">A.A<span>.</span></a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
@@ -79,11 +95,11 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact" class="btn-primary-outline btn-sm">Contact</a></li>
-                <li><button id="lang-toggle" class="lang-toggle-btn" aria-label="Toggle Language"
-                        style="background:none; border:none; font-size:1.2rem; font-weight:600; cursor:pointer; color:var(--text-primary); margin-left: 0.5rem; font-family: inherit;">AR</button>
+                <li><button id="lang-toggle" class="lang-toggle-btn custom-toggle"
+                        aria-label="Toggle Language">AR</button>
                 </li>
-                <li><button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme"
-                        style="background:none; border:none; font-size:1.2rem; cursor:pointer; color:var(--text-primary); margin-left: 0.5rem;">☀️</button>
+                <li><button id="theme-toggle" class="theme-toggle-btn custom-toggle"
+                        aria-label="Toggle Theme">☀️</button>
                 </li>
             </ul>
             <div class="hamburger">
@@ -389,9 +405,11 @@
 
                         <div class="project-links mt-1">
                             <a href="https://github.com/wafaashour499/Egyptian-Artifacts-Assistant" target="_blank"
-                                class="btn-primary-outline btn-sm"><i class="fab fa-github"></i> GitHub</a>
+                                class="btn-primary-outline btn-sm" rel="noopener noreferrer"><i
+                                    class="fab fa-github"></i> GitHub</a>
                             <a href="https://egyptian-artifacts-assistant.streamlit.app/" target="_blank"
-                                class="btn-primary btn-sm"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                class="btn-primary btn-sm" rel="noopener noreferrer"><i
+                                    class="fas fa-external-link-alt"></i> Live Demo</a>
                             <button type="button" class="btn-secondary btn-sm" data-open-modal="case-study-modal"><i
                                     class="fas fa-book-open"></i> Case Study</button>
                         </div>
@@ -409,7 +427,9 @@
                         <div class="card-tags"><span class="tag">Power BI</span><span class="tag">Excel</span><span
                                 class="tag">Data Analysis</span></div>
                         <div class="project-links mt-1">
-                            <a href="#" target="_blank" class="btn-primary-outline btn-sm"><i class="fab fa-github"></i>
+                            <a href="https://github.com/wafaashour499/data-professional-survey-dashboard"
+                                target="_blank" class="btn-primary-outline btn-sm" rel="noopener noreferrer"><i
+                                    class="fab fa-github"></i>
                                 GitHub</a>
                             <button type="button" class="btn-secondary btn-sm"
                                 data-open-modal="case-study-modal-powerbi-survey"><i class="fas fa-book-open"></i>
@@ -425,7 +445,9 @@
                         <div class="card-tags"><span class="tag">Power BI</span><span class="tag">Excel</span><span
                                 class="tag">Data Analysis</span></div>
                         <div class="project-links mt-1">
-                            <a href="#" target="_blank" class="btn-primary-outline btn-sm"><i class="fab fa-github"></i>
+                            <a href="https://github.com/wafaashour499/film-industry-profitability-analysis"
+                                target="_blank" class="btn-primary-outline btn-sm" rel="noopener noreferrer"><i
+                                    class="fab fa-github"></i>
                                 GitHub</a>
                             <button type="button" class="btn-secondary btn-sm"
                                 data-open-modal="case-study-modal-powerbi-sales"><i class="fas fa-book-open"></i>
@@ -441,7 +463,9 @@
                         <div class="card-tags"><span class="tag">Python</span><span class="tag">Pandas</span><span
                                 class="tag">EDA</span></div>
                         <div class="project-links mt-1">
-                            <a href="#" target="_blank" class="btn-primary-outline btn-sm"><i class="fab fa-github"></i>
+                            <a href="https://github.com/wafaashour499/film-industry-profitability-analysis"
+                                target="_blank" class="btn-primary-outline btn-sm" rel="noopener noreferrer"><i
+                                    class="fab fa-github"></i>
                                 GitHub</a>
                             <button type="button" class="btn-secondary btn-sm"
                                 data-open-modal="case-study-modal-movies-eda"><i class="fas fa-book-open"></i>
@@ -457,9 +481,10 @@
                         <div class="card-tags"><span class="tag">SQL</span><span class="tag">Orange</span><span
                                 class="tag">EDA</span></div>
                         <div class="project-links mt-1">
-                            <a href="#" target="_blank" class="btn-primary-outline btn-sm"><i class="fab fa-github"></i>
+                            <a href="#" target="_blank" class="btn-primary-outline btn-sm" rel="noopener noreferrer"><i
+                                    class="fab fa-github"></i>
                                 GitHub</a>
-                            <a href="#" target="_blank" class="btn-primary-outline btn-sm"><i
+                            <a href="#" target="_blank" class="btn-primary-outline btn-sm" rel="noopener noreferrer"><i
                                     class="fas fa-external-link-alt"></i> Live Demo</a>
                         </div>
                     </div>
@@ -472,9 +497,10 @@
                         <div class="card-tags"><span class="tag">Machine Learning</span><span
                                 class="tag">Scikit-learn</span></div>
                         <div class="project-links mt-1">
-                            <a href="#" target="_blank" class="btn-primary-outline btn-sm"><i class="fab fa-github"></i>
+                            <a href="#" target="_blank" class="btn-primary-outline btn-sm" rel="noopener noreferrer"><i
+                                    class="fab fa-github"></i>
                                 GitHub</a>
-                            <a href="#" target="_blank" class="btn-primary-outline btn-sm"><i
+                            <a href="#" target="_blank" class="btn-primary-outline btn-sm" rel="noopener noreferrer"><i
                                     class="fas fa-external-link-alt"></i> Live Demo</a>
                         </div>
                     </div>
@@ -487,9 +513,10 @@
                         <div class="card-tags"><span class="tag">n8n</span><span class="tag">Automation</span><span
                                 class="tag">AI</span></div>
                         <div class="project-links mt-1">
-                            <a href="#" target="_blank" class="btn-primary-outline btn-sm"><i class="fab fa-github"></i>
+                            <a href="#" target="_blank" class="btn-primary-outline btn-sm" rel="noopener noreferrer"><i
+                                    class="fab fa-github"></i>
                                 GitHub</a>
-                            <a href="#" target="_blank" class="btn-primary-outline btn-sm"><i
+                            <a href="#" target="_blank" class="btn-primary-outline btn-sm" rel="noopener noreferrer"><i
                                     class="fas fa-external-link-alt"></i> Live Demo</a>
                         </div>
                     </div>
@@ -502,7 +529,8 @@
                         <div class="card-tags"><span class="tag">Excel</span><span class="tag">PivotTables</span>
                         </div>
                         <div class="project-links mt-1">
-                            <a href="#" target="_blank" class="btn-primary-outline btn-sm"><i class="fab fa-github"></i>
+                            <a href="#" target="_blank" class="btn-primary-outline btn-sm" rel="noopener noreferrer"><i
+                                    class="fab fa-github"></i>
                                 GitHub</a>
                             <button type="button" class="btn-secondary btn-sm"
                                 data-open-modal="case-study-modal-excel-sales"><i class="fas fa-book-open"></i>
@@ -518,11 +546,97 @@
                         <div class="card-tags"><span class="tag">Tableau</span><span class="tag">Data
                                 Visualization</span><span class="tag">KPI Analysis</span></div>
                         <div class="project-links mt-1">
-                            <a href="#" target="_blank" class="btn-primary-outline btn-sm"><i class="fab fa-github"></i>
+                            <a href="#" target="_blank" class="btn-primary-outline btn-sm" rel="noopener noreferrer"><i
+                                    class="fab fa-github"></i>
                                 GitHub</a>
                             <button type="button" class="btn-secondary btn-sm"
                                 data-open-modal="case-study-modal-tableau-sales"><i class="fas fa-book-open"></i>
                                 Case Study</button>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass-card reveal delay-1">
+                        <div class="card-icon"><i class="fas fa-users-cog"></i></div>
+                        <h3>Employee Report Dashboard</h3>
+                        <p>Interactive Power BI dashboard analyzing a 689-employee workforce — headcount, department
+                            distribution, and more.</p>
+                        <div class="card-tags"><span class="tag">Power BI</span><span class="tag">Excel</span><span
+                                class="tag">HR Analytics</span></div>
+                        <div class="project-links mt-1">
+                            <a href="https://github.com/wafaashour499/employee-report-dashboard" target="_blank"
+                                rel="noopener noreferrer" class="btn-primary-outline btn-sm"><i
+                                    class="fab fa-github"></i> GitHub</a>
+                            <button type="button" class="btn-secondary btn-sm"
+                                data-open-modal="case-study-modal-employee-report"><i class="fas fa-book-open"></i> Case
+                                Study</button>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass-card reveal delay-2">
+                        <div class="card-icon"><i class="fas fa-pizza-slice"></i></div>
+                        <h3>Pizza Sales Dashboard</h3>
+                        <p>Excel & Python project turning raw pizza sales data into an interactive dashboard and
+                            business insights.</p>
+                        <div class="card-tags"><span class="tag">Excel</span><span class="tag">Power Pivot</span><span
+                                class="tag">Python</span></div>
+                        <div class="project-links mt-1">
+                            <a href="https://github.com/wafaashour499/Pizza-Sales-Dashboard" target="_blank"
+                                rel="noopener noreferrer" class="btn-primary-outline btn-sm"><i
+                                    class="fab fa-github"></i> GitHub</a>
+                            <button type="button" class="btn-secondary btn-sm"
+                                data-open-modal="case-study-modal-pizza-sales"><i class="fas fa-book-open"></i> Case
+                                Study</button>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass-card reveal delay-3">
+                        <div class="card-icon"><i class="fas fa-bicycle"></i></div>
+                        <h3>Bike Sales Dashboard</h3>
+                        <p>Interactive bike sales dashboard built in Excel (Power Pivot, Data Model) with
+                            Python-validated insights.</p>
+                        <div class="card-tags"><span class="tag">Excel</span><span class="tag">Power Pivot</span><span
+                                class="tag">Data Modeling</span></div>
+                        <div class="project-links mt-1">
+                            <a href="https://github.com/wafaashour499/bike-sales-dashboard" target="_blank"
+                                rel="noopener noreferrer" class="btn-primary-outline btn-sm"><i
+                                    class="fab fa-github"></i> GitHub</a>
+                            <button type="button" class="btn-secondary btn-sm"
+                                data-open-modal="case-study-modal-bike-sales"><i class="fas fa-book-open"></i> Case
+                                Study</button>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass-card reveal delay-1">
+                        <div class="card-icon"><i class="fas fa-shopping-cart"></i></div>
+                        <h3>Retail Sales Analysis</h3>
+                        <p>End-to-end retail sales analysis (2016–2019) from messy raw data to a cleaned dataset and an
+                            interactive Excel dashboard.</p>
+                        <div class="card-tags"><span class="tag">Excel</span><span class="tag">PivotTables</span><span
+                                class="tag">Data Cleaning</span></div>
+                        <div class="project-links mt-1">
+                            <a href="https://github.com/wafaashour499/retail-sales-analysis" target="_blank"
+                                rel="noopener noreferrer" class="btn-primary-outline btn-sm"><i
+                                    class="fab fa-github"></i> GitHub</a>
+                            <button type="button" class="btn-secondary btn-sm"
+                                data-open-modal="case-study-modal-retail-sales"><i class="fas fa-book-open"></i> Case
+                                Study</button>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass-card reveal delay-2">
+                        <div class="card-icon"><i class="fas fa-seedling"></i></div>
+                        <h3>Crop Yield Prediction</h3>
+                        <p>ML model predicting crop yield (10 major crops, 101 countries, 1990–2013) using Random Forest
+                            & XGBoost, with EDA and a Streamlit dashboard for interactive predictions.</p>
+                        <div class="card-tags"><span class="tag">Python</span><span class="tag">Machine
+                                Learning</span><span class="tag">Streamlit</span><span class="tag">XGBoost</span></div>
+                        <div class="project-links mt-1">
+                            <a href="https://github.com/wafaashour499/Crop-Yield-Prediction-ML" target="_blank"
+                                rel="noopener noreferrer" class="btn-primary-outline btn-sm"><i
+                                    class="fab fa-github"></i> GitHub</a>
+                            <button type="button" class="btn-secondary btn-sm"
+                                data-open-modal="case-study-modal-crop-yield"><i class="fas fa-book-open"></i> Case
+                                Study</button>
                         </div>
                     </div>
                 </div>
@@ -665,11 +779,11 @@
                                     <i class="fas fa-envelope"></i>
                                 </a>
                                 <a href="https://www.linkedin.com/in/wafa-ashour/" target="_blank"
-                                    class="social-btn glass-card" aria-label="LinkedIn">
+                                    class="social-btn glass-card" aria-label="LinkedIn" rel="noopener noreferrer">
                                     <i class="fab fa-linkedin-in"></i>
                                 </a>
                                 <a href="https://github.com/wafaashour499" target="_blank" class="social-btn glass-card"
-                                    aria-label="GitHub">
+                                    aria-label="GitHub" rel="noopener noreferrer">
                                     <i class="fab fa-github"></i>
                                 </a>
                                 <a href="#" class="social-btn glass-card" aria-label="YouTube">
@@ -957,8 +1071,9 @@
                     </section>
 
                     <div class="cs-footer-links">
-                        <a href="#" target="_blank" rel="noopener noreferrer" class="btn-primary-outline btn-sm"><i
-                                class="fab fa-github"></i> GitHub</a>
+                        <a href="https://github.com/wafaashour499/data-professional-survey-dashboard" target="_blank"
+                            rel="noopener noreferrer" class="btn-primary-outline btn-sm"><i class="fab fa-github"></i>
+                            GitHub</a>
                     </div>
                 </div>
             </div>
@@ -1060,8 +1175,8 @@
                     </section>
 
                     <div class="cs-footer-links">
-                        <a href="#" target="_blank" rel="noopener noreferrer" class="btn-primary-outline btn-sm"><i
-                                class="fab fa-github"></i> GitHub</a>
+                        <a href="https://github.com/wafaashour499" target="_blank" rel="noopener noreferrer"
+                            class="btn-primary-outline btn-sm"><i class="fab fa-github"></i> GitHub</a>
                     </div>
                 </div>
             </div>
@@ -1197,8 +1312,9 @@
                     </section>
 
                     <div class="cs-footer-links">
-                        <a href="#" target="_blank" rel="noopener noreferrer" class="btn-primary-outline btn-sm"><i
-                                class="fab fa-github"></i> GitHub</a>
+                        <a href="https://github.com/wafaashour499/film-industry-profitability-analysis" target="_blank"
+                            rel="noopener noreferrer" class="btn-primary-outline btn-sm"><i class="fab fa-github"></i>
+                            GitHub</a>
                     </div>
                 </div>
             </div>
@@ -1397,6 +1513,244 @@
                     <div class="cs-footer-links">
                         <a href="#" target="_blank" rel="noopener noreferrer" class="btn-primary-outline btn-sm"><i
                                 class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Case Study Modal: Employee Report Dashboard -->
+    <div id="case-study-modal-employee-report" class="cs-modal" aria-hidden="true">
+        <div class="cs-modal-overlay" data-close-modal></div>
+        <div class="cs-modal-panel glass-card" role="dialog" aria-modal="true"
+            aria-labelledby="cs-modal-title-employee-report">
+            <button type="button" class="cs-modal-close" data-close-modal aria-label="Close case study"><i
+                    class="fas fa-times"></i></button>
+            <div class="cs-modal-scroll">
+                <div class="cs-hero">
+                    <img src="assets/case-study/powerbi-survey-hero.png" alt="Employee Report Dashboard" loading="lazy">
+                    <div class="cs-hero-overlay">
+                        <span class="cs-hero-badge">Case Study</span>
+                        <h2 id="cs-modal-title-employee-report">Employee Report Dashboard</h2>
+                        <p>Interactive Power BI dashboard analyzing a 689-employee workforce.</p>
+                    </div>
+                </div>
+                <div class="cs-body">
+                    <section class="cs-section">
+                        <h3><i class="fas fa-info-circle"></i> Overview</h3>
+                        <p>This project provides an in-depth analysis of a workforce of 689 employees across 5
+                            countries. It tracks key HR metrics like headcount, department distribution, gender balance,
+                            hiring trends, and salary insights.</p>
+                    </section>
+                    <section class="cs-section">
+                        <h3><i class="fas fa-tools"></i> Tech Stack</h3>
+                        <div class="project-tech"><span>Power BI</span><span>Excel</span></div>
+                    </section>
+                    <div class="cs-footer-links">
+                        <a href="https://github.com/wafaashour499/employee-report-dashboard" target="_blank"
+                            rel="noopener noreferrer" class="btn-primary-outline btn-sm"><i class="fab fa-github"></i>
+                            GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Case Study Modal: Pizza Sales Dashboard -->
+    <div id="case-study-modal-pizza-sales" class="cs-modal" aria-hidden="true">
+        <div class="cs-modal-overlay" data-close-modal></div>
+        <div class="cs-modal-panel glass-card" role="dialog" aria-modal="true"
+            aria-labelledby="cs-modal-title-pizza-sales">
+            <button type="button" class="cs-modal-close" data-close-modal aria-label="Close case study"><i
+                    class="fas fa-times"></i></button>
+            <div class="cs-modal-scroll">
+                <div class="cs-hero">
+                    <img src="assets/case-study/excel-sales-dashboard-summary.png" alt="Pizza Sales Dashboard"
+                        loading="lazy">
+                    <div class="cs-hero-overlay">
+                        <span class="cs-hero-badge">Case Study</span>
+                        <h2 id="cs-modal-title-pizza-sales">Pizza Sales Dashboard</h2>
+                        <p>Excel & Python project turning raw pizza sales data into business insights.</p>
+                    </div>
+                </div>
+                <div class="cs-body">
+                    <section class="cs-section">
+                        <h3><i class="fas fa-info-circle"></i> Overview</h3>
+                        <p>Combines data cleaning, data modeling, and PivotTables to build an interactive dashboard
+                            tracking pizza sales, performance across variants, and total revenue.</p>
+                    </section>
+                    <section class="cs-section">
+                        <h3><i class="fas fa-tools"></i> Tech Stack</h3>
+                        <div class="project-tech"><span>Excel</span><span>Python</span><span>Power Pivot</span></div>
+                    </section>
+                    <div class="cs-footer-links">
+                        <a href="https://github.com/wafaashour499/Pizza-Sales-Dashboard" target="_blank"
+                            rel="noopener noreferrer" class="btn-primary-outline btn-sm"><i class="fab fa-github"></i>
+                            GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Case Study Modal: Bike Sales Dashboard -->
+    <div id="case-study-modal-bike-sales" class="cs-modal" aria-hidden="true">
+        <div class="cs-modal-overlay" data-close-modal></div>
+        <div class="cs-modal-panel glass-card" role="dialog" aria-modal="true"
+            aria-labelledby="cs-modal-title-bike-sales">
+            <button type="button" class="cs-modal-close" data-close-modal aria-label="Close case study"><i
+                    class="fas fa-times"></i></button>
+            <div class="cs-modal-scroll">
+                <div class="cs-hero">
+                    <img src="assets/case-study/powerbi-sales-hero.png" alt="Bike Sales Dashboard" loading="lazy">
+                    <div class="cs-hero-overlay">
+                        <span class="cs-hero-badge">Case Study</span>
+                        <h2 id="cs-modal-title-bike-sales">Bike Sales Dashboard</h2>
+                        <p>Interactive bike sales dashboard built in Excel with Python-validated insights.</p>
+                    </div>
+                </div>
+                <div class="cs-body">
+                    <section class="cs-section">
+                        <h3><i class="fas fa-info-circle"></i> Overview</h3>
+                        <p>A data-driven business intelligence project that transforms raw data into an interactive
+                            dashboard, providing clear insights into bike sales and customer trends.</p>
+                    </section>
+                    <section class="cs-section">
+                        <h3><i class="fas fa-tools"></i> Tech Stack</h3>
+                        <div class="project-tech"><span>Excel</span><span>Power Pivot</span><span>Data Modeling</span>
+                        </div>
+                    </section>
+                    <div class="cs-footer-links">
+                        <a href="https://github.com/wafaashour499/bike-sales-dashboard" target="_blank"
+                            rel="noopener noreferrer" class="btn-primary-outline btn-sm"><i class="fab fa-github"></i>
+                            GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Case Study Modal: Retail Sales Analysis -->
+    <div id="case-study-modal-retail-sales" class="cs-modal" aria-hidden="true">
+        <div class="cs-modal-overlay" data-close-modal></div>
+        <div class="cs-modal-panel glass-card" role="dialog" aria-modal="true"
+            aria-labelledby="cs-modal-title-retail-sales">
+            <button type="button" class="cs-modal-close" data-close-modal aria-label="Close case study"><i
+                    class="fas fa-times"></i></button>
+            <div class="cs-modal-scroll">
+                <div class="cs-hero">
+                    <img src="assets/case-study/excel-sales-dashboard-summary.png" alt="Retail Sales Analysis"
+                        loading="lazy">
+                    <div class="cs-hero-overlay">
+                        <span class="cs-hero-badge">Case Study</span>
+                        <h2 id="cs-modal-title-retail-sales">Retail Sales Analysis</h2>
+                        <p>End-to-end retail sales analysis (2016–2019).</p>
+                    </div>
+                </div>
+                <div class="cs-body">
+                    <section class="cs-section">
+                        <h3><i class="fas fa-info-circle"></i> Overview</h3>
+                        <p>Transforms messy raw retail data spanning three years into a cleaned dataset and an
+                            interactive Excel dashboard with actionable business insights on sales, profit, and customer
+                            behavior.</p>
+                    </section>
+                    <section class="cs-section">
+                        <h3><i class="fas fa-tools"></i> Tech Stack</h3>
+                        <div class="project-tech"><span>Excel</span><span>PivotTables</span></div>
+                    </section>
+                    <div class="cs-footer-links">
+                        <a href="https://github.com/wafaashour499/retail-sales-analysis" target="_blank"
+                            rel="noopener noreferrer" class="btn-primary-outline btn-sm"><i class="fab fa-github"></i>
+                            GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Case Study Modal: Crop Yield Prediction -->
+    <div id="case-study-modal-crop-yield" class="cs-modal" aria-hidden="true">
+        <div class="cs-modal-overlay" data-close-modal></div>
+        <div class="cs-modal-panel glass-card" role="dialog" aria-modal="true"
+            aria-labelledby="cs-modal-title-crop-yield">
+            <button type="button" class="cs-modal-close" data-close-modal aria-label="Close case study">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="cs-modal-scroll">
+                <div class="cs-hero">
+                    <img src="assets/case-study/movies-eda-hero.jpg" alt="Crop Yield Prediction" loading="lazy">
+                    <div class="cs-hero-overlay">
+                        <span class="cs-hero-badge">Case Study</span>
+                        <h2 id="cs-modal-title-crop-yield">Crop Yield Prediction ML</h2>
+                        <p>Predicting crop yields across 10 crops and 101 countries using Machine Learning</p>
+                    </div>
+                </div>
+                <div class="cs-body">
+                    <section class="cs-section">
+                        <h3><i class="fas fa-info-circle"></i> Overview</h3>
+                        <p>
+                            A machine learning project that predicts crop yields across 10 major crops and 101 countries
+                            using historical data from 1990 to 2013. The project covers the full ML pipeline: data
+                            cleaning, exploratory data analysis, feature importance analysis, model training, and an
+                            interactive Streamlit dashboard for making live predictions.
+                        </p>
+                    </section>
+                    <section class="cs-section">
+                        <h3><i class="fas fa-user-check"></i> My Contributions</h3>
+                        <ul class="cs-list">
+                            <li>Data Cleaning & Preprocessing</li>
+                            <li>Exploratory Data Analysis (EDA)</li>
+                            <li>Feature Importance Analysis</li>
+                            <li>Model Training with Random Forest & XGBoost</li>
+                            <li>Streamlit Dashboard for Interactive Predictions</li>
+                        </ul>
+                    </section>
+                    <section class="cs-section">
+                        <h3><i class="fas fa-star"></i> Key Features</h3>
+                        <div class="cs-features-grid">
+                            <div class="cs-feature"><i class="fas fa-globe"></i>
+                                <div>
+                                    <h4>Global Coverage</h4>
+                                    <p>Analyzes data from 101 countries and 10 major crop types.</p>
+                                </div>
+                            </div>
+                            <div class="cs-feature"><i class="fas fa-robot"></i>
+                                <div>
+                                    <h4>Dual ML Models</h4>
+                                    <p>Compares Random Forest and XGBoost for optimal prediction accuracy.</p>
+                                </div>
+                            </div>
+                            <div class="cs-feature"><i class="fas fa-chart-bar"></i>
+                                <div>
+                                    <h4>Feature Importance</h4>
+                                    <p>Identifies the key factors driving crop yield performance.</p>
+                                </div>
+                            </div>
+                            <div class="cs-feature"><i class="fas fa-desktop"></i>
+                                <div>
+                                    <h4>Streamlit Dashboard</h4>
+                                    <p>Interactive interface for real-time crop yield predictions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="cs-section">
+                        <h3><i class="fas fa-tools"></i> Tech Stack</h3>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Scikit-learn</span>
+                            <span>XGBoost</span>
+                            <span>Random Forest</span>
+                            <span>Pandas</span>
+                            <span>Matplotlib</span>
+                            <span>Streamlit</span>
+                        </div>
+                    </section>
+                    <div class="cs-footer-links">
+                        <a href="https://github.com/wafaashour499/Crop-Yield-Prediction-ML" target="_blank"
+                            rel="noopener noreferrer" class="btn-primary-outline btn-sm"><i class="fab fa-github"></i>
+                            GitHub</a>
                     </div>
                 </div>
             </div>
