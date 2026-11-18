@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://alwafaashour.netlify.app/sitemap.xml
+Sitemap: https://wafaashour499.github.io/Portfolio-website/sitemap.xml
