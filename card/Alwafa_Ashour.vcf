@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Ashour;Alwafa;;;
+FN:Alwafa Ashour
+TITLE:Data Analyst
+TEL;TYPE=CELL:+201015912870
+EMAIL;TYPE=INTERNET:wafaashour499@gmail.com
+URL:https://alwafaashour.netlify.app
+URL:https://linkedin.com/in/alwafa-ashour
+ADR;TYPE=HOME:;;;Cairo;;;Egypt
+NOTE:Data Analyst | Python, SQL, Power BI, RAG/LLM. Met at the Job Fair.
+END:VCARD
